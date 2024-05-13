@@ -2,7 +2,7 @@ const saveButton = document.getElementById("update");
 const branchesList = document.getElementById("branches");
 const errors = document.getElementById("errors");
 
-const defaultBranchList = ["develop"];
+const defaultBranchList = [];
 
 chrome.storage.sync.get({ branchesList: defaultBranchList }, (data) => {
   branchesList.value = data.branchesList.join("\n");
