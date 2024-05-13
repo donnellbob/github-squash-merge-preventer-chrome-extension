@@ -1,5 +1,5 @@
 function checkBranch() {
-  chrome.storage.sync.get({ branchesList: [] }, (data) => {
+  chrome.storage.sync.get({ branchesList: ["develop"] }, (data) => {
     const targetBranch = document.querySelector(
       "span.head-ref span.css-truncate-target"
     ).innerText;
